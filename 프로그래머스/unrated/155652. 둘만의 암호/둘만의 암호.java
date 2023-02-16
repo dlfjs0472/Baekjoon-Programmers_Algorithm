@@ -6,7 +6,7 @@ class Solution {
                 do{
                     words[i]++;
                     if(words[i] > 'z'){ 
-                        words[i] -= 26; 
+                        words[i] = 'a'; 
                     }
                 }while(skip.contains(String.valueOf(words[i])));
             }
